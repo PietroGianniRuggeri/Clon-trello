@@ -1,11 +1,26 @@
-<div class="w-screen h-screen bg-white relative">
-    <div class="absolute w-full h-full">
-        <img loading="lazy" class="absolute w-96 left-0 bottom-0" src="assets/svg/login-bg-left.svg" alt="">
-        <img loading="lazy" class="absolute w-96 right-0 bottom-0" src="assets/svg/login-bg-rigth.svg" alt="">
+<div class="w-screen h-screen bg-white sm:bg-gray-50 relative">
+    <div class="absolute w-full h-full hidden sm:block">
+        <img 
+          loading="lazy" 
+          class="absolute w-60 lg:w-96 left-0 bottom-0" 
+          src="assets/svg/login-bg-left.svg" 
+          alt="login"
+          />
+        <img 
+          loading="lazy" 
+          class="absolute w-60 lg:w-96 right-0 bottom-0" 
+          src="assets/svg/login-bg-rigth.svg" 
+          alt="login"
+          />
     </div>
-    <div class="relative w-4/12 m-auto">
+    <div class="relative w-full sm::w-7/12 md:w-6/12 lg:w-4/12 m-auto">
         <header class="pt-6 pb-2 flex justify-center">
-            <img class="w-56" src="assets/images/logo/logo-gradient-blue-trello.png" alt="">
+            <img 
+              loading="lazy" 
+              class="w-56" 
+              src="assets/images/logo/logo-gradient-blue-trello.png" 
+              alt="logo"
+              />
         </header>
         <div class="bg-white rounded shadow py-4 px-6">
             <div class="mb-4">
@@ -13,28 +28,38 @@
                 <form novalidate class="space-y-4">
                     <div class="relative">
                         <input 
-                            placeholder="Enter email" 
-                            type="text" 
-                            class="w-full rounded bg-gray-100 border-2 border-gray-300"
+                           placeholder="Enter email" 
+                           type="text" 
+                           class="w-full rounded bg-gray-100 border-2 border-gray-300"
                         />
                     </div>
                     <div class="relative">
                         <input 
-                            placeholder="Enter password" 
-                            type="text" 
-                            class="w-full rounded bg-gray-100 border-2 border-gray-300"
+                           placeholder="Enter password" 
+                           type="text" 
+                           class="w-full rounded bg-gray-100 border-2 border-gray-300"
                         />
                     </div>
                     <div>
-                        <button 
-                            class="text-white w-full px-5 py-2 font-medium rounded bg-green-700 text-sm" 
-                            type="submit"
-                        >
-                            Log In
-                        </button>
+                        <app-btn [typeBtn]="'submit'" [color]="'success'">Log In</app-btn>
                     </div>
                 </form>
             </div>
+            <hr class="my-4 border-b-1 border-r-gray-300" />
+            <div class="flex justify-center items-center space-x-0 space-y-2 md:space-x-2 md:space-y-0 gap-">
+                <a routerLink="/forgot-password" class="text-sm text-blue-600 hover:text-blue-800 font-light">Can't log in?</a>
+                <span class="text-gray-500 hidden md:block">•</span>
+                <a routerLink="/register" class="text-blue-600 font-light m-0">Sign up for an account</a>
+            </div>      
+        </div>
+        <hr class="mt-10 border-b-1 border-r-gray-300" />
+        <div class="flex justify-center">
+            <img
+                loading="lazy"
+                class="w-32 mt-4"
+                src="assets/images/logo/logo-atlassian-gray.png"
+                alt="logo" 
+            />
         </div>
     </div>
 </div>
