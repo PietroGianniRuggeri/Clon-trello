@@ -19,6 +19,7 @@ import { ScrollComponent } from './pages/scroll/scroll.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
 import { CdkTableModule } from '@angular/cdk/table';
 import { TableComponent } from './pages/table/table.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -45,7 +46,8 @@ import { TableComponent } from './pages/table/table.component';
     DialogModule,
     ScrollingModule,
     HttpClientModule,
-    CdkTableModule
+    CdkTableModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
