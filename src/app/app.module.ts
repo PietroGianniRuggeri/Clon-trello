@@ -10,6 +10,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
+import { BoardComponent } from './pages/board/board.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DialogModule } from '@angular/cdk/dialog';
+import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 
 
 @NgModule({
@@ -19,6 +23,8 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     BtnComponent,
     BoardsComponent,
     NavbarComponent,
+    BoardComponent,
+    TodoDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,6 +32,8 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     AppRoutingModule,
     FontAwesomeModule,
     CdkAccordionModule,
+    DragDropModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
