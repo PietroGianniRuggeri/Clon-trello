@@ -17,6 +17,9 @@ import { DialogModule } from '@angular/cdk/dialog';
 import { TodoDialogComponent } from './components/todo-dialog/todo-dialog.component';
 import { ScrollComponent } from './pages/scroll/scroll.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CdkTableModule } from '@angular/cdk/table';
+import { TableComponent } from './pages/table/table.component';
+
 
 
 
@@ -30,6 +33,7 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     BoardComponent,
     TodoDialogComponent,
     ScrollComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,7 +44,8 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
     DragDropModule,
     DialogModule,
     ScrollingModule,
-    HttpClientModule
+    HttpClientModule,
+    CdkTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

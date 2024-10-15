@@ -1,7 +1,8 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { DialogRef,DIALOG_DATA } from '@angular/cdk/dialog';
 import { faBars, faCheckSquare, faClock, faTag, faUser, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { ToDo } from 'src/app/Models/todo.model';
+import { ToDo } from 'src/app/models/todo.model';
+
 
 interface inputData {
   todo: ToDo;
